@@ -24,3 +24,15 @@
 
 	
 */
+
+var totalWidth = 0;
+$('#sushi-list ul li').each(function(){
+	totalWidth += $(this).outerWidth(true);
+});
+$('#sushi-list').css('width' , totalWidth + 'px');
+$('#sushi-list').css('white-space', 'nowrap');
+
+
+$('#sushi-list li img').css('opcity',0.5);
+
+
